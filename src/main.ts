@@ -1,7 +1,7 @@
 const main = (text: string) => {
     console.log(text);
     const g = 3.1416;
-    let nameIsHundredTImes = 'Amar sonar bangla';
+    let nameIsHundredTImes = "Amar sonar bangla";
     nameIsHundredTImes =
         nameIsHundredTImes +
         nameIsHundredTImes +
@@ -12,5 +12,4 @@ const main = (text: string) => {
 };
 
 main(
-    'Hello world 2! lorem4,Hello world 2! lorem4,Hello world 2! lorem4,Hello world 2! lorem4,Hello world 2! lorem4 Hello world 2! lorem4 Hello world 2! lorem4',
-);
+    `Oh my God 23!`);

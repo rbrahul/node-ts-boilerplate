@@ -1,0 +1,14 @@
+version: "2"
+services:
+  node:
+    image: "node:latest"
+    user: "node"
+    working_dir: /home/app
+    environment:
+      - NODE_ENV=${NODE_ENV:-develop}
+    volumes:
+      - ./:/home/app
+    expose:
+      - "8081"
+      - "3000"
+    command: bash -c "cd /home/app && echo ${DEFAULT_DOCKER_CMD} && ${DEFAULT_DOCKER_CMD}"
