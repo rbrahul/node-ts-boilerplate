@@ -1,14 +1,11 @@
-version: "2"
+version: "3.9"
 services:
-  node:
-    image: "node:latest"
-    user: "node"
-    working_dir: /home/app
+  app:
+    build: .
     environment:
       - NODE_ENV=${NODE_ENV:-develop}
+      - DEFAULT_DOCKER_CMD=${DEFAULT_DOCKER_CMD}
     volumes:
       - ./:/home/app
-    expose:
-      - "8081"
-      - "3000"
-    command: bash -c "cd /home/app && echo ${DEFAULT_DOCKER_CMD} && ${DEFAULT_DOCKER_CMD}"
+    ports:
+      - "3000:3000"

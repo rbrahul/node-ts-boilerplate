@@ -1,15 +1,9 @@
 "use strict";
-const main = (text) => {
-    console.log(text);
-    const g = 3.1416;
-    let nameIsHundredTImes = "Amar sonar bangla";
-    nameIsHundredTImes =
-        nameIsHundredTImes +
-            nameIsHundredTImes +
-            nameIsHundredTImes +
-            nameIsHundredTImes +
-            nameIsHundredTImes;
-    console.log(`G is:${g} ${nameIsHundredTImes}`);
+const http = require('http');
+const requestListener = function (req, res) {
+    res.writeHead(200);
+    res.end('Hello, World!');
 };
-main(`Oh my God 23!`);
+const server = http.createServer(requestListener);
+server.listen(3000);
 //# sourceMappingURL=main.js.map
