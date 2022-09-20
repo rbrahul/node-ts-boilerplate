@@ -1,7 +1,8 @@
 # NodeJS Typescript Boiler Plate
+This is a small Nodejs-Typescript based boilerplate that helps to develop, test and run a project quickly inside a Docker environment.
 
 ### What is included?
-- Latest Nodejs with Typescript, Eslint, Preetier
+- Latest Nodejs with Typescript, Jest, Eslint, Preetier
 - Build, Run, Test Nodejs inside docker container environment
 
 
